@@ -136,3 +136,7 @@ gopkg.in/check.v1 v1.0.0-20180628173108-788fd7840127 h1:qIbj1fsPNlZgppZ+VLlY7N33
 gopkg.in/yaml.v3 v3.0.0-20200313102051-9f266ea9e77c/go.mod h1:K4uyk7z7BCEPqu6E+C64Yfv1cQ7kz7rIZviUmN+EgEM=
 gopkg.in/yaml.v3 v3.0.1 h1:fxVm/GzAzEWqLHuvctI91KS9hhNmmWOoWu0XTYJS7CA=
 gopkg.in/yaml.v3 v3.0.1/go.mod h1:K4uyk7z7BCEPqu6E+C64Yfv1cQ7kz7rIZviUmN+EgEM=
+k0s.io v0.1.5 h1:u56e/zJVY0XzM7ifkiGCmel13l+4GlbyoAdBf78KVt8=
+k0s.io v0.1.5/go.mod h1:TtIatUMZ9zdCe/amaAJolshw7dW52oGyZmb8auFv4Aw=
+k0s.io/pkg/reverseproxy v0.1.5 h1:mMxI4LJutG1pUDImFFjq/GAPH1GDM+vx9GAJyC8wZjM=
+k0s.io/pkg/reverseproxy v0.1.5/go.mod h1:93wF3gv98t112ufq8SmqB1YKoysURpk1Abl7EwxkbhM=

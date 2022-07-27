@@ -16,6 +16,8 @@ import (
 	"github.com/go-chi/cors"
 	"github.com/go-chi/render"
 	"github.com/gorilla/websocket"
+
+	"k0s.io/pkg/reverseproxy"
 )
 
 var (
@@ -37,7 +39,7 @@ type Traffic struct {
 }
 
 func SetUIPath(path string) {
-	uiPath = C.Path.Resolve(path)
+	uiPath = path
 }
 
 func Start(addr string, secret string) {
@@ -61,7 +63,6 @@ func Start(addr string, secret string) {
 	r.Group(func(r chi.Router) {
 		r.Use(authentication)
 
-		r.Get("/", hello)
 		r.Get("/logs", getLogs)
 		r.Get("/traffic", traffic)
 		r.Get("/version", version)
@@ -73,13 +74,7 @@ func Start(addr string, secret string) {
 	})
 
 	if uiPath != "" {
-		r.Group(func(r chi.Router) {
-			fs := http.StripPrefix("/ui", http.FileServer(http.Dir(uiPath)))
-			r.Get("/ui", http.RedirectHandler("/ui/", http.StatusTemporaryRedirect).ServeHTTP)
-			r.Get("/ui/*", func(w http.ResponseWriter, r *http.Request) {
-				fs.ServeHTTP(w, r)
-			})
-		})
+		r.NotFound(reverseproxy.Handler(uiPath).ServeHTTP)
 	}
 
 	l, err := net.Listen("tcp", addr)
@@ -126,10 +121,6 @@ func authentication(next http.Handler) http.Handler {
 		next.ServeHTTP(w, r)
 	}
 	return http.HandlerFunc(fn)
-}
-
-func hello(w http.ResponseWriter, r *http.Request) {
-	render.JSON(w, r, render.M{"hello": "clash"})
 }
 
 func traffic(w http.ResponseWriter, r *http.Request) {
