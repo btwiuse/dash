@@ -32,7 +32,7 @@ var (
 func init() {
 	flag.StringVar(&homeDir, "d", "", "set configuration directory")
 	flag.StringVar(&configFile, "f", "", "specify configuration file")
-	flag.StringVar(&externalUI, "ext-ui", "", "override external ui directory")
+	flag.StringVar(&externalUI, "ext-ui", "https://clashboard.vercel.app", "override external ui location")
 	flag.StringVar(&externalController, "ext-ctl", "", "override external controller address")
 	flag.StringVar(&secret, "secret", "", "override secret for RESTful API")
 	flag.BoolVar(&version, "v", false, "show current version of clash")

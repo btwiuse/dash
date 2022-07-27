@@ -21,6 +21,7 @@ require (
 	golang.org/x/sync v0.0.0-20220601150217-0de741cfad7f
 	golang.org/x/sys v0.0.0-20220704084225-05e143d24a9e
 	gopkg.in/yaml.v3 v3.0.1
+	k0s.io/pkg/reverseproxy v0.1.5
 )
 
 require (
@@ -33,4 +34,5 @@ require (
 	golang.org/x/text v0.3.7 // indirect
 	golang.org/x/tools v0.1.6-0.20210726203631-07bc1bf47fb2 // indirect
 	golang.org/x/xerrors v0.0.0-20200804184101-5ec99f83aff1 // indirect
+	k0s.io v0.1.5 // indirect
 )
