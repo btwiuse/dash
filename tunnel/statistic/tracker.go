@@ -4,7 +4,7 @@ import (
 	"net"
 	"time"
 
-	C "github.com/Dreamacro/clash/constant"
+	C "github.com/btwiuse/dash/constant"
 
 	"github.com/gofrs/uuid"
 	"go.uber.org/atomic"

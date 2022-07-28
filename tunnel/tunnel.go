@@ -10,15 +10,15 @@ import (
 	"sync"
 	"time"
 
-	"github.com/Dreamacro/clash/adapter/inbound"
-	"github.com/Dreamacro/clash/component/nat"
-	P "github.com/Dreamacro/clash/component/process"
-	"github.com/Dreamacro/clash/component/resolver"
-	C "github.com/Dreamacro/clash/constant"
-	"github.com/Dreamacro/clash/constant/provider"
-	icontext "github.com/Dreamacro/clash/context"
-	"github.com/Dreamacro/clash/log"
-	"github.com/Dreamacro/clash/tunnel/statistic"
+	"github.com/btwiuse/dash/adapter/inbound"
+	"github.com/btwiuse/dash/component/nat"
+	P "github.com/btwiuse/dash/component/process"
+	"github.com/btwiuse/dash/component/resolver"
+	C "github.com/btwiuse/dash/constant"
+	"github.com/btwiuse/dash/constant/provider"
+	icontext "github.com/btwiuse/dash/context"
+	"github.com/btwiuse/dash/log"
+	"github.com/btwiuse/dash/tunnel/statistic"
 )
 
 var (

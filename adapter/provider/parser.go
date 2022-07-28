@@ -5,9 +5,9 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/Dreamacro/clash/common/structure"
-	C "github.com/Dreamacro/clash/constant"
-	types "github.com/Dreamacro/clash/constant/provider"
+	"github.com/btwiuse/dash/common/structure"
+	C "github.com/btwiuse/dash/constant"
+	types "github.com/btwiuse/dash/constant/provider"
 )
 
 var errVehicleType = errors.New("unsupport vehicle type")

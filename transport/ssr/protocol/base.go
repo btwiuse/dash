@@ -10,9 +10,9 @@ import (
 	"sync"
 	"time"
 
-	"github.com/Dreamacro/clash/common/pool"
-	"github.com/Dreamacro/clash/log"
-	"github.com/Dreamacro/clash/transport/shadowsocks/core"
+	"github.com/btwiuse/dash/common/pool"
+	"github.com/btwiuse/dash/log"
+	"github.com/btwiuse/dash/transport/shadowsocks/core"
 )
 
 type Base struct {

@@ -11,10 +11,10 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/Dreamacro/clash/common/pool"
-	"github.com/Dreamacro/clash/log"
-	"github.com/Dreamacro/clash/transport/shadowsocks/core"
-	"github.com/Dreamacro/clash/transport/ssr/tools"
+	"github.com/btwiuse/dash/common/pool"
+	"github.com/btwiuse/dash/log"
+	"github.com/btwiuse/dash/transport/shadowsocks/core"
+	"github.com/btwiuse/dash/transport/ssr/tools"
 )
 
 func init() {

@@ -5,9 +5,9 @@ import (
 	"sync"
 	"time"
 
-	"github.com/Dreamacro/clash/component/profile"
-	C "github.com/Dreamacro/clash/constant"
-	"github.com/Dreamacro/clash/log"
+	"github.com/btwiuse/dash/component/profile"
+	C "github.com/btwiuse/dash/constant"
+	"github.com/btwiuse/dash/log"
 
 	"go.etcd.io/bbolt"
 )

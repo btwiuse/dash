@@ -8,10 +8,10 @@ import (
 	"strings"
 	"time"
 
-	C "github.com/Dreamacro/clash/constant"
-	_ "github.com/Dreamacro/clash/constant/mime"
-	"github.com/Dreamacro/clash/log"
-	"github.com/Dreamacro/clash/tunnel/statistic"
+	C "github.com/btwiuse/dash/constant"
+	_ "github.com/btwiuse/dash/constant/mime"
+	"github.com/btwiuse/dash/log"
+	"github.com/btwiuse/dash/tunnel/statistic"
 
 	"github.com/go-chi/chi/v5"
 	"github.com/go-chi/cors"
