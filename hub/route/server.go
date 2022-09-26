@@ -18,6 +18,7 @@ import (
 	"github.com/gorilla/websocket"
 
 	"k0s.io/pkg/reverseproxy"
+	"github.com/btwiuse/ufo"
 )
 
 var (
@@ -75,6 +76,13 @@ func Start(addr string, secret string) {
 
 	if uiPath != "" {
 		r.NotFound(reverseproxy.Handler(uiPath).ServeHTTP)
+	}
+
+	if strings.Contains(addr, "://") {
+		if err := ufo.Serve(addr, r); err != nil {
+			log.Errorln("External controller serve error: %s", err)
+		}
+		return
 	}
 
 	l, err := net.Listen("tcp", addr)
