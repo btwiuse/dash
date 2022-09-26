@@ -5,7 +5,6 @@ import (
 	"fmt"
 	"net"
 	"net/url"
-	"os"
 	"strings"
 
 	"github.com/Dreamacro/clash/adapter"
@@ -245,11 +244,6 @@ func parseGeneral(cfg *RawConfig) (*General, error) {
 
 	// checkout externalUI exist
 	if externalUI != "" {
-		externalUI = C.Path.Resolve(externalUI)
-
-		if _, err := os.Stat(externalUI); os.IsNotExist(err) {
-			return nil, fmt.Errorf("external-ui: %s not exist", externalUI)
-		}
 	}
 
 	return &General{
