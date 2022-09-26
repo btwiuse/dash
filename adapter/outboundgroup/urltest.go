@@ -5,11 +5,11 @@ import (
 	"encoding/json"
 	"time"
 
-	"github.com/Dreamacro/clash/adapter/outbound"
-	"github.com/Dreamacro/clash/common/singledo"
-	"github.com/Dreamacro/clash/component/dialer"
-	C "github.com/Dreamacro/clash/constant"
-	"github.com/Dreamacro/clash/constant/provider"
+	"github.com/btwiuse/dash/adapter/outbound"
+	"github.com/btwiuse/dash/common/singledo"
+	"github.com/btwiuse/dash/component/dialer"
+	C "github.com/btwiuse/dash/constant"
+	"github.com/btwiuse/dash/constant/provider"
 )
 
 type urlTestOption func(*URLTest)

@@ -1,4 +1,4 @@
-module github.com/Dreamacro/clash
+module github.com/btwiuse/dash
 
 go 1.18
 

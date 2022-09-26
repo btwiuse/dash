@@ -10,7 +10,7 @@ RUN go mod download && \
     mv ./bin/clash-docker /clash
 
 FROM alpine:latest
-LABEL org.opencontainers.image.source="https://github.com/Dreamacro/clash"
+LABEL org.opencontainers.image.source="https://github.com/btwiuse/dash"
 
 RUN apk add --no-cache ca-certificates tzdata
 COPY --from=builder /Country.mmdb /root/.config/clash/

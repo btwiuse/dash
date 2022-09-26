@@ -1,22 +1,22 @@
 <h1 align="center">
-  <img src="https://github.com/Dreamacro/clash/raw/master/docs/logo.png" alt="Clash" width="200">
+  <img src="https://github.com/btwiuse/dash/raw/master/docs/logo.png" alt="Clash" width="200">
   <br>Clash<br>
 </h1>
 
 <h4 align="center">A rule-based tunnel in Go.</h4>
 
 <p align="center">
-  <a href="https://github.com/Dreamacro/clash/actions">
+  <a href="https://github.com/btwiuse/dash/actions">
     <img src="https://img.shields.io/github/workflow/status/Dreamacro/clash/Go?style=flat-square" alt="Github Actions">
   </a>
-  <a href="https://goreportcard.com/report/github.com/Dreamacro/clash">
-    <img src="https://goreportcard.com/badge/github.com/Dreamacro/clash?style=flat-square">
+  <a href="https://goreportcard.com/report/github.com/btwiuse/dash">
+    <img src="https://goreportcard.com/badge/github.com/btwiuse/dash?style=flat-square">
   </a>
   <img src="https://img.shields.io/github/go-mod/go-version/Dreamacro/clash?style=flat-square">
-  <a href="https://github.com/Dreamacro/clash/releases">
+  <a href="https://github.com/btwiuse/dash/releases">
     <img src="https://img.shields.io/github/release/Dreamacro/clash/all.svg?style=flat-square">
   </a>
-  <a href="https://github.com/Dreamacro/clash/releases/tag/premium">
+  <a href="https://github.com/btwiuse/dash/releases/tag/premium">
     <img src="https://img.shields.io/badge/release-Premium-00b4f0?style=flat-square">
   </a>
 </p>
@@ -34,18 +34,18 @@
 
 ## Premium
 
-Premium core is proprietary. You can find their release notes and pre-built binaries [here](https://github.com/Dreamacro/clash/releases/tag/premium).
+Premium core is proprietary. You can find their release notes and pre-built binaries [here](https://github.com/btwiuse/dash/releases/tag/premium).
 
-- gvisor/system stack TUN device on macOS, Linux and Windows ([ref](https://github.com/Dreamacro/clash/wiki/premium-core-features#tun-device))
-- Policy routing with [Scripts](https://github.com/Dreamacro/clash/wiki/premium-core-features#script)
-- Load your rules with [Rule Providers](https://github.com/Dreamacro/clash/wiki/premium-core-features#rule-providers)
-- Monitor Clash usage with a built-in profiling engine. ([Dreamacro/clash-tracing](https://github.com/Dreamacro/clash-tracing))
+- gvisor/system stack TUN device on macOS, Linux and Windows ([ref](https://github.com/btwiuse/dash/wiki/premium-core-features#tun-device))
+- Policy routing with [Scripts](https://github.com/btwiuse/dash/wiki/premium-core-features#script)
+- Load your rules with [Rule Providers](https://github.com/btwiuse/dash/wiki/premium-core-features#rule-providers)
+- Monitor Clash usage with a built-in profiling engine. ([Dreamacro/clash-tracing](https://github.com/btwiuse/dash-tracing))
 
 ## Getting Started
-Documentations are available at [GitHub Wiki](https://github.com/Dreamacro/clash/wiki).
+Documentations are available at [GitHub Wiki](https://github.com/btwiuse/dash/wiki).
 
 ## Development
-If you want to build a Go application that uses Clash as a library, check out the [GitHub Wiki](https://github.com/Dreamacro/clash/wiki/Using-Clash-in-your-Golang-program).
+If you want to build a Go application that uses Clash as a library, check out the [GitHub Wiki](https://github.com/btwiuse/dash/wiki/Using-Clash-in-your-Golang-program).
 
 ## Credits
 

@@ -5,7 +5,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/Dreamacro/clash/adapter/outbound"
+	"github.com/btwiuse/dash/adapter/outbound"
 
 	"github.com/docker/docker/api/types/container"
 	"github.com/stretchr/testify/require"

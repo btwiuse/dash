@@ -3,9 +3,9 @@ package inbound
 import (
 	"net"
 
-	C "github.com/Dreamacro/clash/constant"
-	"github.com/Dreamacro/clash/context"
-	"github.com/Dreamacro/clash/transport/socks5"
+	C "github.com/btwiuse/dash/constant"
+	"github.com/btwiuse/dash/context"
+	"github.com/btwiuse/dash/transport/socks5"
 )
 
 // NewSocket receive TCP inbound and return ConnContext
