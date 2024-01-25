@@ -17,8 +17,8 @@ import (
 	"github.com/go-chi/render"
 	"github.com/gorilla/websocket"
 
-	"k0s.io/pkg/reverseproxy"
-	"github.com/btwiuse/ufo"
+	"github.com/webteleport/utils"
+	"github.com/webteleport/wtf"
 )
 
 var (
@@ -75,11 +75,11 @@ func Start(addr string, secret string) {
 	})
 
 	if uiPath != "" {
-		r.NotFound(reverseproxy.Handler(uiPath).ServeHTTP)
+		r.NotFound(utils.ReverseProxy(uiPath).ServeHTTP)
 	}
 
 	if strings.Contains(addr, "://") {
-		if err := ufo.Serve(addr, r); err != nil {
+		if err := wtf.Serve(addr, r); err != nil {
 			log.Errorln("External controller serve error: %s", err)
 		}
 		return
